@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Mi Primera Página Web</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="login-box">
+        <h2>La contraseña solo la sabes tú, recuerda el apodo "tonto" que me ponías a veces. </h2>
+        <input type="password" id="password" placeholder="Ingresa la contraseña">
+        <br>
+        <button onclick="verificarPassword()">Entrar</button>
+        <div class="error" id="error-msg"></div>
+    </div>
+    <div id="contenido-protegido" style="display:none;">
+	<h1>❤ Te amo</h1>
+    <h2> Sé que me equivoqué, pero mi amor por ti es más fuerte que mis errores; no busco excusas, solo otra oportunidad para demostrarte que mi corazón sigue siendo tuyo 💞</h2>
+	<p>Sé que cometí errores, mi flaquita hermosa. Pero créeme, algún día te amé como nunca había amado antes. Solo necesito saber que no fui el único que sintió algo tan profundo. Quise decirte la verdad hace mucho tiempo, pero el miedo a tu respuesta me hizo callar. Durante tanto tiempo creí en tu promesa de que seríamos amigos para siempre... y mi corazón quiso creer más allá de lo que la realidad me mostraba. Confundí tu amistad con amor, y no tuve el valor para admitirlo. Por eso fallé, y hoy solo quiero pedirte perdón por no haber sido lo suficientemente fuerte.</p>
+    <p> Huí como un cobarde, sin mirar atrás… o al menos eso pensé. Con el tiempo entendí que fui yo quien se equivocó, sin importar lo que dijiste o hiciste. No quiero culparte, porque en el fondo sé que yo debí intervenir, cambiar las cosas… pero nunca lo hice. A pesar de todo, mi corazón sigue amándote como el primer día. Ojalá pudiera decírtelo de frente, mostrarte cuánto significas para mí y hacerte sentir única. Pero ahora estás lejos, viviendo tu vida, y me alegra saber que eres feliz, aunque ya no sea a mi lado. Solo quiero que sepas que nunca dejaré de amarte. </p>
+        <img src="bunny.gif" alt="Bunny con corazón" style="width:200px; display:block; margin:1rem auto;">
+	<button onclick="saludar()">CLICK AQUÍ MI AMOR</button>
+    </div>
+	<script>
+        function verificarPassword() {
+            var password = document.getElementById("password").value;
+            var errorMsg = document.getElementById("error-msg");
+            var contenidoProtegido = document.getElementById("contenido-protegido");
+            
+            // Aquí puedes poner la contraseña que desees
+            var contraseñaCorrecta = "toche";
+            
+            if (password === contraseñaCorrecta) {
+                contenidoProtegido.style.display = "block";
+                errorMsg.innerHTML = "";
+            } else {
+                errorMsg.innerHTML = "Contraseña incorrecta, intenta de nuevo.";
+                contenidoProtegido.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #ffffff;
+    margin: 0;
+    padding: 2rem;
+    color: #222;
+}
+h1 {
+    color: #df3333;
+}
+button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background: #eb9be7;
+    color: #6b5f5f;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button:hover {
+    background: #005fa3;
+}
+#login-box {
+    background: #fff0f6;
+    border: 1px solid #eb9be7;
+    border-radius: 8px;
+    max-width: 350px;
+    margin: 4rem auto 2rem auto;
+    padding: 2rem 1.5rem;
+    box-shadow: 0 2px 8px #e6b6e6;
+    text-align: center;
+}
+#login-box input[type="password"] {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-bottom: 1rem;
+    width: 80%;
+}
+#login-box .error {
+    color: #df3333;
+    margin-top: 0.5rem;
+    font-size: 0.95rem;
+}
+#contenido-protegido {
+    display: none;
+}
